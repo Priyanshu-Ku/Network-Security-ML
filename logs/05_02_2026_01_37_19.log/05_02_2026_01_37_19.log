@@ -1,0 +1,35 @@
+[ 2026-05-02 01:38:30,545 ] 39 root - INFO - Start Data Ingestion
+[ 2026-05-02 01:38:44,328 ] 64 root - INFO - Performed train test split on the dataframe
+[ 2026-05-02 01:38:44,328 ] 65 root - INFO - Exited split_data_as_train_test method of DataIngestion class
+[ 2026-05-02 01:38:44,329 ] 70 root - INFO - Exported train and test file path: [Artifacts\05_02_2026_01_37_19\data_ingestion\ingested\train.csv] and [Artifacts\05_02_2026_01_37_19\data_ingestion\ingested\test.csv]
+[ 2026-05-02 01:38:44,500 ] 74 root - INFO - Exported train and test file path. Train test split is completed
+[ 2026-05-02 01:38:44,501 ] 42 root - INFO - Data Ingestion completed and artifact: DataIngestionArtifact(trained_file_path='Artifacts\\05_02_2026_01_37_19\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\05_02_2026_01_37_19\\data_ingestion\\ingested\\test.csv')
+[ 2026-05-02 01:38:44,502 ] 51 root - INFO - Start Data Validation
+[ 2026-05-02 01:38:44,613 ] 32 root - INFO - Required number of columns: 2
+[ 2026-05-02 01:38:44,613 ] 33 root - INFO - Dataframe has columns: 31
+[ 2026-05-02 01:38:44,614 ] 32 root - INFO - Required number of columns: 2
+[ 2026-05-02 01:38:44,614 ] 33 root - INFO - Dataframe has columns: 31
+[ 2026-05-02 01:38:44,614 ] 44 root - INFO - Required numerical columns for: ['having_IP_Address', 'URL_Length', 'Shortining_Service', 'having_At_Symbol', 'double_slash_redirecting', 'Prefix_Suffix', 'having_Sub_Domain', 'SSLfinal_State', 'Domain_registeration_length', 'Favicon', 'port', 'HTTPS_token', 'Request_URL', 'URL_of_Anchor', 'Links_in_tags', 'SFH', 'Submitting_to_email', 'Abnormal_URL', 'Redirect', 'on_mouseover', 'RightClick', 'popUpWidnow', 'Iframe', 'age_of_domain', 'DNSRecord', 'web_traffic', 'Page_Rank', 'Google_Index', 'Links_pointing_to_page']
+[ 2026-05-02 01:38:44,615 ] 46 root - INFO - Dataframe has numerical columns: ['having_IP_Address', 'URL_Length', 'Shortining_Service', 'having_At_Symbol', 'double_slash_redirecting', 'Prefix_Suffix', 'having_Sub_Domain', 'SSLfinal_State', 'Domain_registeration_length', 'Favicon', 'port', 'HTTPS_token', 'Request_URL', 'URL_of_Anchor', 'Links_in_tags', 'SFH', 'Submitting_to_email', 'Abnormal_URL', 'Redirect', 'on_mouseover', 'RightClick', 'popUpWidnow', 'Iframe', 'age_of_domain', 'DNSRecord', 'web_traffic', 'Page_Rank', 'Google_Index', 'Links_pointing_to_page', 'Statistical_report', 'Result']
+[ 2026-05-02 01:38:44,615 ] 44 root - INFO - Required numerical columns for: ['having_IP_Address', 'URL_Length', 'Shortining_Service', 'having_At_Symbol', 'double_slash_redirecting', 'Prefix_Suffix', 'having_Sub_Domain', 'SSLfinal_State', 'Domain_registeration_length', 'Favicon', 'port', 'HTTPS_token', 'Request_URL', 'URL_of_Anchor', 'Links_in_tags', 'SFH', 'Submitting_to_email', 'Abnormal_URL', 'Redirect', 'on_mouseover', 'RightClick', 'popUpWidnow', 'Iframe', 'age_of_domain', 'DNSRecord', 'web_traffic', 'Page_Rank', 'Google_Index', 'Links_pointing_to_page']
+[ 2026-05-02 01:38:44,617 ] 46 root - INFO - Dataframe has numerical columns: ['having_IP_Address', 'URL_Length', 'Shortining_Service', 'having_At_Symbol', 'double_slash_redirecting', 'Prefix_Suffix', 'having_Sub_Domain', 'SSLfinal_State', 'Domain_registeration_length', 'Favicon', 'port', 'HTTPS_token', 'Request_URL', 'URL_of_Anchor', 'Links_in_tags', 'SFH', 'Submitting_to_email', 'Abnormal_URL', 'Redirect', 'on_mouseover', 'RightClick', 'popUpWidnow', 'Iframe', 'age_of_domain', 'DNSRecord', 'web_traffic', 'Page_Rank', 'Google_Index', 'Links_pointing_to_page', 'Statistical_report', 'Result']
+[ 2026-05-02 01:38:44,966 ] 54 root - INFO - Data Validation completed and artifact: DataValidationArtifact(validation_status=True, valid_train_file_path='Artifacts\\05_02_2026_01_37_19\\data_ingestion\\ingested\\train.csv', valid_test_file_path='Artifacts\\05_02_2026_01_37_19\\data_ingestion\\ingested\\test.csv', invalid_train_file_path=None, invalid_test_file_path=None, drift_report_file_path='Artifacts\\05_02_2026_01_37_19\\data_validation\\drift_report\\report.yaml')
+[ 2026-05-02 01:38:44,966 ] 63 root - INFO - Start Data Transformation
+[ 2026-05-02 01:38:44,966 ] 58 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[ 2026-05-02 01:38:44,966 ] 60 root - INFO - Starting data transformation
+[ 2026-05-02 01:38:45,029 ] 48 root - INFO - Entered get_data_transformer_object method of DataTransformation class
+[ 2026-05-02 01:38:45,029 ] 51 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2026-05-02 01:38:45,050 ] 47 root - INFO - Entered the save_object method of MainUtils class
+[ 2026-05-02 01:38:45,056 ] 51 root - INFO - Exited the save_object method of MainUtils class
+[ 2026-05-02 01:38:45,056 ] 47 root - INFO - Entered the save_object method of MainUtils class
+[ 2026-05-02 01:38:45,060 ] 51 root - INFO - Exited the save_object method of MainUtils class
+[ 2026-05-02 01:38:45,063 ] 67 root - INFO - Data Transformation completed and artifact: DataTransformationArtifact(transformed_object_file_path='Artifacts\\05_02_2026_01_37_19\\data_transformation\\transformed_object\\preprocessor.pkl', transformed_train_file_path='Artifacts\\05_02_2026_01_37_19\\data_transformation\\transformed\\train.npy', transformed_test_file_path='Artifacts\\05_02_2026_01_37_19\\data_transformation\\transformed\\test.npy')
+[ 2026-05-02 01:38:45,063 ] 76 root - INFO - Start Model Trainer
+[ 2026-05-02 01:46:29,153 ] 47 root - INFO - Entered the save_object method of MainUtils class
+[ 2026-05-02 01:46:29,159 ] 51 root - INFO - Exited the save_object method of MainUtils class
+[ 2026-05-02 01:46:29,162 ] 47 root - INFO - Entered the save_object method of MainUtils class
+[ 2026-05-02 01:46:29,192 ] 51 root - INFO - Exited the save_object method of MainUtils class
+[ 2026-05-02 01:46:29,192 ] 144 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\05_02_2026_01_37_19\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9907707910750507, precision_score=0.9896667004356194, recall_score=0.991877347954107), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9878787878787879, precision_score=0.9839034205231388, recall_score=0.9918864097363083))
+[ 2026-05-02 01:46:29,197 ] 81 root - INFO - Model Trainer completed and artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\05_02_2026_01_37_19\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9907707910750507, precision_score=0.9896667004356194, recall_score=0.991877347954107), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9878787878787879, precision_score=0.9839034205231388, recall_score=0.9918864097363083))
+[ 2026-05-02 01:46:29,197 ] 119 root - INFO - Training Pipeline completed successfully
+[ 2026-05-02 02:03:45,042 ] 273 root - ERROR - Error during single prediction: name '_get_network_model' is not defined

@@ -1,0 +1,2 @@
+[ 2026-05-02 02:05:16,709 ] 77 root - INFO - Syncing model from s3://networksecurity-artifacts/final_model/latest \u2192 final_model/
+[ 2026-05-02 02:06:14,262 ] 98 root - INFO - Model files downloaded from S3 successfully.
